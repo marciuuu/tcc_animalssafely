@@ -3,7 +3,7 @@
 </div>
 
 
-# 🐾 ** Projeto Animals Safely** 🐾
+# 🐾 Projeto Animals Safely
 
 **Animals Safely** é um site desenvolvido como **Trabalho de Conclusão de Curso (TCC)** no curso técnico em **Informática para Internet** da **ETEC**. O objetivo do projeto é facilitar a **adoção de animais**, conectando instituições, ONGs ou donos a pessoas interessadas em adotar.
 
@@ -11,23 +11,23 @@ O projeto foi criado para abordar um problema social significativo: o **abandono
 
 **Observação:** O projeto foi realizado no período de **2 semestres**.
 
-## 🚀 **Funcionalidades** 📋
+## 🚀 Funcionalidades 
 
 - 🐶 **Cadastro de animais** por instituições ou donos;
 - 🔍 **Busca e filtragem de animais** para adoção;
 - 🖼️ **Visualização de detalhes** sobre cada animal, incluindo fotos e informações de contato;
 - 📱 **Comunicação** entre instituições e adotantes após a adoção, através do **WhatsApp** cadastrado.
 
-## ⚙️ **Tecnologias Utilizadas** 💻
+## ⚙️ Tecnologias Utilizadas 
 
 - **Front-end:** HTML, CSS, JavaScript e Bootstrap.
 - **Back-end:** PHP.
 - **Banco de Dados:** MySQL.
 - **Servidor Local:** XAMPP.
 
-## 🏗️ **Estrutura do Projeto** 🛠️
+## 🛠️ Estrutura do Projeto
 
-### **Front-end**
+### Front-end
 O design e a parte interativa do site foram desenvolvidos por mim, **Marcio Mateus**, utilizando:
 - **HTML** para estruturar as páginas;
 - **CSS (interno)** e Bootstrap para estilização e responsividade;
@@ -38,25 +38,25 @@ Planejei o layout com foco em **simplicidade e eficiência**, utilizando a cor *
 **Observação:** No início do desenvolvimento, optei por utilizar **CSS interno**, pois estava iniciando na programação e achei mais fácil. Hoje, percebo que usar **CSS externo** é uma prática muito mais vantajosa, pois além de deixar o código mais **organizado**, também segue boas práticas de desenvolvimento.
 
 
-### **Back-end**
+### Back-end
 A lógica do servidor, integração com o banco de dados e funcionalidades de gestão foram implementadas por **Lucas Abib**, utilizando PHP e MySQL. Seu trabalho foi fundamental para o sucesso do projeto.
 
-## 👥 **Autores do Projeto** 👥
+## 👥 Autores do Projeto 
 
 - **Marcio Mateus** - Desenvolvimento do **front-end**.
 - **Lucas Abib** - Desenvolvimento do **back-end**.
 - **Thifany Menezes** - Idealizadora do projeto e responsável pela **documentação**.
 
-## ⚖️ **Aviso Legal** ⚖️
+## ⚖️ Aviso Legal 
 
 Este projeto foi desenvolvido para **fins acadêmicos** e não está disponível para uso comercial. Todo o conteúdo foi criado em conformidade com os requisitos e padrões da **ETEC**.
 
-## 💡 **Contribuição** 💡
+## 💡Contribuição
 
 Feedbacks são muito bem-vindos! Aceito contribuições, seja no **front-end** ou **back-end**, para aprimorar o projeto.
 
 
-## **🖼️ Fotos do Projeto 📸**
+## 📸 Fotos do Projeto
 
 ![Image](https://github.com/user-attachments/assets/16923e17-8660-4699-a4a3-7919f091647a)
 

@@ -1,0 +1,337 @@
+style.css
+
+
+/* ----------------------------------- */
+/* Estilos Globais                    */
+/* ----------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #0c837c;
+}
+
+/* ----------------------------------- */
+/* NAV bar - Configurações de Cabeçalho */
+/* ----------------------------------- */
+.section-1 {
+    width: 100%;
+    height: 14vh;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 500ms;
+    justify-content: space-between;
+    z-index: 1000; /* Garantir que o header fique no topo */
+}
+
+/* Estilos de Navegação */
+nav {
+    margin-right: 70px;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding: 10px 1px;
+    transition: 200ms;
+}
+
+/* Estilo ao ativar um link de navegação */
+.active {
+    border-color: #0c837c;
+}
+
+/* Efeito hover nos links de navegação */
+nav a:hover {
+    border-color: #ffffff;
+    text-decoration: none;
+    color: #0a6761;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+}
+
+/* Estilos do Logo */
+.logo {
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #dcdcdc; /* Cor do logo ao passar o mouse */
+}
+
+/* Estilos para mudar o background do header */
+.bgc {
+    background: #0c837c;
+    padding: 10px;
+}
+
+.bgc .logo {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.bgc nav a {
+    color: #ffffff;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 769px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav {
+        padding: 15px;
+        margin: 0px;
+    }
+}
+
+/* ----------------------------------- */
+/* Botão Entrar                        */
+/* ----------------------------------- */
+.btn-enter {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0c837c;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.btn-enter:hover {
+    background-color: #f8fdfd;
+    text-decoration: none;
+    color: #0a6761;
+}
+
+/* ----------------------------------- */
+/* Seção About Us                      */
+/* ----------------------------------- */
+.ftco-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.ftco-no-pt {
+    padding-top: 0;
+}
+
+.ftco-no-pb {
+    padding-bottom: 0;
+}
+
+.img-video {
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Título da seção */
+.heading-section {
+    margin-bottom: 2rem;
+}
+
+.heading-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilos dos serviços */
+.services-2 {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.services-2:hover {
+    background-color: #0c837c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícones e texto dos serviços */
+.icon {
+    font-size: 2rem;
+    color: #F96D00;
+    margin-right: 1rem; /* Espaço entre o ícone e o texto */
+}
+
+.text {
+    align-items: center;
+}
+
+.text h4 {
+    font-size: 1.15rem;
+    font-weight: 650;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.pl-3 {
+    padding-left: 1rem;
+}
+
+/* ----------------------------------- */
+/* Página Home                         */
+/* ----------------------------------- */
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 7.5%;
+}
+
+/* Estilos de texto da Home */
+.home-text {
+    max-width: 40rem;
+}
+
+.home-text .text-h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    line-height: 4rem;
+    color: #fff;
+}
+
+.home-text p {
+    margin-bottom: 4rem;
+}
+
+/* Estilos do botão na Home */
+.home-btn {
+    padding: 15px 45px;
+    background: var(--white);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+    color: #0c837c;
+}
+
+.home-btn:hover {
+    background: #ffffff;
+    text-decoration: none;
+    color: #0a6761;
+}
+
+/* Ajustes da imagem principal na Home */
+.home-img img {
+    max-width: 100%;  /* Limita a imagem à largura do contêiner */
+    height: auto;     /* Mantém a proporção */
+    display: block;   /* Remove espaço abaixo da imagem */
+}
+
+.home-img img {
+    width: 110%;
+}
+
+/* ----------------------------------- */
+/* Botão Quero Doar                    */
+/* ----------------------------------- */
+/* Estilo do botão baseado no Uiverse.io */
+button {
+    --color: #ffffff;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    margin-right: 10px;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: #0a6761;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+button:active:before {
+    background: #085a54;
+    transition: background 0s;
+}
+
+/* ----------------------------------- */
+/* Botão Divulgar                      */
+/* ----------------------------------- */
+.btn-divulgar {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #0c837c;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn-divulgar:hover {
+    background-color: #9a8111;
+    color: #ffffff;
+}
+

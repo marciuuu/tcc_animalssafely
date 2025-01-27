@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Animais</title>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    <ul>
+        {% for usuario in usuario %}
+            <li>ID: {{ usuario.codUsuario }}, Nome: {{ usuario.nome }}, situacao: {{usuario.situacao}}</li>
+            <a href="excluir_usuario/{{usuario.codUsuario}}">Excluir</a>
+        {% endfor %}
+    </ul>
+
+    <h1>Lista de Instituições</h1>
+    <ul>
+        {% for instituicao in instituicao %}
+            <li>ID: {{ instituicao.codInstituicao }}, Nome: {{ instituicao.nome }}, situacao: {{instituicao.situacao}}</li>
+            <a href="excluir_instituicao/{{instituicao.codInstituicao}}">Excluir</a>
+        {% endfor %}
+    </ul>
+
+    <h1>Lista de Animais</h1>
+    <ul>
+        {% for animal in animal %}
+            <li>ID: {{ animal.codAnimal }}, Nome: {{ animal.nome }}, situacao: {{animal.situacao}}</li>
+            <a href="excluir_animal/{{animal.codAnimal}}">Excluir</a>
+        {% endfor %}
+    </ul>
+</body>
+</html>

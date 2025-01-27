@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>!-->
+    <title>Registro de Adoção</title>
+    <style>
+        /* Reset básico para garantir uma aparência consistente */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c837c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilo para o contêiner do formulário */
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 90%;
+            max-width: 1000px;
+            overflow-x: auto;
+        }
+
+        /* Estilo para o título do formulário */
+        .form-container h1 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Estilo para o formulário */
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* Estilo para os campos do formulário */
+        .form-field {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        /* Estilo para os rótulos dos campos */
+        label {
+            font-size: 0.9em;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Estilo para os campos de entrada */
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"] {
+            padding: 10px;
+            font-size: 0.9em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        /* Estilo para o botão de envio */
+        button {
+            padding: 10px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #0c837c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #1e716b;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1>Registrar Adoção</h1>
+        <form action="../registrar_adocao" method="POST">
+            <div class="form-field">
+                <label for="email">Email do Adotante</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="data-adocao">Data da Adoção:</label>
+                <input type="date" id="dataAdoc" name="dataAdoc" required>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

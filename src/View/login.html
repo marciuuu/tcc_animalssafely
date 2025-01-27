@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Iconscout CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    <title>Login Form</title> 
+
+    <style>
+        /* Google Font Import - Poppins */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0c837c;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .input-field {
+            position: relative;
+            margin-top: 15px;
+        }
+
+        .input-field input {
+            width: 100%;
+            padding: 0 35px;
+            height: 45px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .input-field input:focus {
+            border-color: #007bff;
+        }
+
+        .input-field i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #aaa;
+        }
+
+        .input-field i.icon {
+            left: 10px;
+        }
+
+        .input-field i.showHidePw {
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .checkbox-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .checkbox-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-content input {
+            margin-right: 10px;
+        }
+
+        .text {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .text a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .button input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #0c837c;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button input:hover {
+            background-color: #0a6660;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        
+        <span class="title">Login</span>
+        <form action="login" method="POST">
+            <div class="input-field">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <i class="uil uil-envelope icon"></i>
+            </div>
+            <div class="input-field">
+                <input type="password" id="senha" name="senha" class="password" placeholder="Digite sua senha" required>
+                <i class="uil uil-lock icon"></i>
+                <i class="uil uil-eye showHidePw" id="togglePassword"></i>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Entrar">
+            </div>
+            {{mensagem}}
+        </form>
+
+        <div class="login-signup">
+            <span class="text">Não possui conta?
+                <a href="loading" class="text login-link"> Crie agora!</a>
+            </span>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordField = document.getElementById('senha');
+            const type = passwordField.type === 'password' ? 'text' : 'password';
+            passwordField.type = type;
+            this.classList.toggle('uil-eye', type === 'text');
+            this.classList.toggle('uil-eye-slash', type === 'password');
+        });
+    </script>
+</body>
+

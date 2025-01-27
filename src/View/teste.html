@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #004d40;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav ul li {
+            margin-left: 20px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1500x600'); /* Imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .hero .btn {
+            background-color: #00796b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .about, .services, .testimonials, .blog, .contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .about h2, .services h2, .testimonials h2, .blog h2, .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .services .card {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .services .card h3 {
+            margin-top: 0;
+        }
+        .footer {
+            background-color: #004d40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Nome da Empresa</div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Bem-vindo à Nome da Empresa</h1>
+    <p>Seu parceiro para soluções incríveis.</p>
+    <a href="images/teste.jpg" class="btn">Saiba Mais</a>
+</section>
+
+<section class="about">
+    <h2>Sobre Nós</h2>
+    <p>Descrição da empresa, missão e visão.</p>
+</section>
+
+<section class="services">
+    <h2>Nossos Serviços</h2>
+    <div class="card">
+        <h3>Serviço 1</h3>
+        <p>Descrição do serviço 1.</p>
+    </div>
+    <div class="card">
+        <h3>Serviço 2</h3>
+        <p>Descrição do serviço 2.</p>
+    </div>
+    <div class="card">
+        <h3>Serviço 3</h3>
+        <p>Descrição do serviço 3.</p>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>O que nossos clientes dizem</h2>
+    <p>"Excelente serviço!" - Cliente A</p>
+    <p>"Muito satisfeitos com o atendimento." - Cliente B</p>
+</section>
+
+<section class="blog">
+    <h2>Blog</h2>
+    <p>Postagens recentes e atualizações.</p>
+</section>
+
+<section class="contact">
+    <h2>Fale Conosco</h2>
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 Nome da Empresa. Todos os direitos reservados.</p>
+    <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</footer>
+
+</body>
+</html>

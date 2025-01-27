@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1; URL='pre_login'"/>
+    <title>Carregando...</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c837c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .loading {
+            font-size: 1.5em;
+            color: #ffffff;
+        }
+
+        .spinner {
+            margin: 20px auto;
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #0a6761;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="spinner"></div>
+        <p>Carregando...</p>
+    </div>
+    <script>
+        // Função para redirecionar após um intervalo
+        function redirectTo(destination) {
+            setTimeout(function() {
+                window.location.href = destination;
+            }, 1000); // Tempo de carregamento em milissegundos
+        }
+
+        // Função para obter parâmetros de query string
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Obtém o valor do parâmetro 'redirect'
+        const redirectPage = getQueryParameter('redirect');
+        if (redirectPage) {
+            // Redireciona para a página especificada
+            redirectTo(redirectPage);
+        }
+    </script>
+</body>
+</html>

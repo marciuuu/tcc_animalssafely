@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar cadastro de Animal</title>
+    <!-- <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/> -->
+    <style>
+        /* Reset básico para garantir uma aparência consistente */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c837c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilo para o contêiner do formulário */
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            overflow-x: auto;
+        }
+
+        /* Estilo para o título do formulário */
+        .form-container h1 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Estilo para o formulário */
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* Estilo para os campos do formulário */
+        .form-field {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        /* Estilo para os rótulos dos campos */
+        label {
+            font-size: 0.9em;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Estilo para os campos de entrada */
+        input[type="text"],
+        input[type="number"],
+        select {
+            padding: 10px;
+            font-size: 0.9em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        /* Estilo para o botão de envio */
+        button {
+            padding: 10px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #0c837c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0b635b;
+        }
+
+        .form-field textarea {
+        width: 100%; /* Ajusta a largura para preencher o contêiner pai */
+        height: 150px; /* Ajusta a altura do campo */
+        box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura e altura */
+    }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Editar cadastro de Animal</h1>
+        <form action="../edita_animal" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="codAnimal" value="{{ animal.codAnimal }}">
+            <div class="form-field">
+                <label for="nome">Nome do bichinho:</label>
+                <input type="text" id="nome" name="nome" required value="{{animal.nome}}">
+            </div>
+
+            <div class="form-field">
+                <label for="porte">Porte:</label>
+                <select id="porte" name="porte" required>
+                    <option value="{{animal.porte}}">{{animal.porte}}</option>
+                    <option value="pequeno">Pequeno</option>
+                    <option value="medio">Medio</option>
+                    <option value="grande">Grande</option>
+                </select>
+            </div>
+            
+            <div class="form-field">
+                <label for="especie">Especie:</label>
+                <select id="especie" name="especie" required>
+                    <option value="{{especie.descricao}}">{{especie.descricao}}</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="raca">Raça:</label>
+                <input type="text" id="raca" name="raca" value="{{raca.descricao}}" required>
+            </div>
+
+            <div class="form-field">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="{{animal.sexo}}">{{animal.sexo}}</option>
+                    <option value="macho">Macho</option>
+                    <option value="femea">Femea</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="idade">Idade aproximada:</label>
+                <input type="number" id="idade" name="idade" required min="0" step="1" value="{{animal.idade}}">
+            </div>
+
+            <div class="form-field">
+                <label for="descricao">Sobre o pet:</label>
+                <textarea id="descricao" name="descricao" required>{{animal.descricao}}</textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="imagem">Imagem do animal:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*">
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+</body>
+</html>

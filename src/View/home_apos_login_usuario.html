@@ -1,0 +1,642 @@
+home_apos_login_usuario
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags Obrigat�rias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+
+    <title>Animals Safely</title>
+
+    <style>
+
+
+/* NAV bar inicio */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #0c837c;
+    
+}
+
+.section-1 {
+   
+    width: 100%;
+    height: 14vh;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 500ms;
+    justify-content: space-between;
+    z-index: 1000; /* Ensure it is on top of other content */
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    margin-right: 0;
+    text-align: center;
+    margin-left: 0.5rem;
+
+}
+
+
+nav a {
+    
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding: 10px 1px;
+    transition: 200ms;
+    
+}
+
+.active {
+    border-color: #0c837c;
+    
+}
+
+nav a:hover {
+    border-color: #ffffff;
+    text-decoration:none;
+    color:#0a6761;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+}
+
+.logo {
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.logo:hover {
+    color: #dcdcdc; /* Opcional: altera a cor do logotipo ao passar o mouse */
+}
+
+.bgc {
+    background: #0c837c;
+    padding: 10px;
+}
+
+.bgc .logo {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.bgc nav a {
+    color: #ffffff;
+}   
+
+@media (max-width: 769px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav {
+        padding: 15px;
+        margin: 0px;
+    }
+}
+
+/* Bot�o Entrar */
+.btn-enter {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0c837c;
+    background-color: #fff; /* Cor verde */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it is on top of other content */
+    
+}
+
+.btn-enter:hover {
+    background-color: #f8fdfd; /* Cor verde escuro ao passar o mouse */
+    text-decoration:none;
+    color:#0a6761;
+}
+
+/* About Us Section */
+.ftco-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.ftco-no-pt {
+    padding-top: 0;
+}
+
+.ftco-no-pb {
+    padding-bottom: 0;
+}
+
+.img-video {
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.heading-section {
+    margin-bottom: 2rem;
+}
+
+.heading-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+
+.services-2 {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.services-2:hover {
+    background-color: #0c837c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 2rem;
+    color: #F96D00;
+    margin-right: 1rem; /* Espa�o entre o �cone e o texto */
+}
+
+.text {
+    align-items: center;
+}
+
+.text h4 {
+    font-size: 1.15rem;
+    font-weight: 650;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.pl-3 {
+    padding-left: 1rem;
+}
+
+
+/* home page */ 
+/* home page */
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 7.5%;
+}
+
+.home-text {
+    max-width: 40rem;
+}
+
+.home-text .text-h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    line-height: 4rem;
+    color: #fff;
+}
+
+.home-text p {
+    margin-bottom: 4rem;
+}
+
+.home-btn {
+    padding: 15px 45px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+    color: #0c837c;
+}
+
+.home-btn:hover {
+    background: #ffffff;
+    text-decoration:none;
+    color:#0a6761;
+}
+
+/* Ajuste da imagem principal */
+.home-img img {
+    max-width: 100%;  /* Garante que a imagem n�o ultrapasse a largura do cont�iner */
+    height: auto;     /* Mant�m a propor��o da imagem */
+    display: block;   /* Remove o espa�o abaixo da imagem, se houver */
+}
+
+.home-img img{
+    width: 110%;
+}
+
+a.home-btn{
+    background-color: #fff;
+}
+
+/* botao quero doar From Uiverse.io by cssbuttons-io */ 
+button {
+    --color: #ffffff;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    margin-right: 10px; /* Espa�o entre os bot�es */
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: #0a6761;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  button:active:before {
+    background: #0b3f3c;
+    transition: background 0s;
+  }
+  
+  /* botao quero doar From Uiverse.io by cssbuttons-io  fim */ 
+
+  .btn-divulgar {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #0c837c; /* Cor de fundo do bot�o */
+    border: 2px solid #ffffff; /* Borda do bot�o */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espa�o entre os bot�es, se necess�rio */
+}
+
+.btn-divulgar:hover {
+    background-color: #9a8111; /* Cor de fundo ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+
+.account {
+    position: relative;
+    top: 20px;
+}
+
+.profile {
+    margin-right: 1rem;
+    top: 0;
+    right: 30px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    position: absolute;
+    width: 260px;
+    background-color: #0b3f3c;
+   top: 100px;
+   right: 15px;
+   border-radius: 20px;
+
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.5s;
+}
+
+.active{
+    visibility: visible;
+    opacity: 1;
+    top: 85px;
+}
+
+.menu::before{
+    content: "";
+    background-color: #0b3f3c;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -8px;
+    right: 35px;
+    rotate: 45deg;
+}
+
+.menu h3{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 18px 0 5px;
+    background-color: #0b3f3c;
+    color: white;
+}
+
+.menu p{
+    font-size: 1rem;
+    text-align: center;
+    color: #b9b9b9;
+    margin-bottom: 20px;
+}
+
+.menu ul{
+    margin-bottom: 20px;
+    list-style-type: none; /* Remove os pontos da lista */
+
+}
+.menu ul li{
+    padding: 15px 20px;
+    border-top: 1px solid #33333310;
+    background: #0b3f3c;
+    transition: 0.5s;
+}
+
+.menu ul li:hover{
+    background: #0b3f3c;
+}
+
+.menu ul li i{
+    font-size: 1.3rem;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.menu ul li:hover i{
+    color: #ffffff;
+}
+.menu ul li a{
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+
+.home-btn {
+    padding: 15px 45px;
+    background: var(--white);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+    color: #0c837c;
+    }
+
+    nav a:hover {
+    border-color: #0c837c;
+    text-decoration: none;
+    color: #0a6761;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: #0c837c;
+    }
+
+
+    .bgc .logo {
+    font-size: 40px;
+    color: #ffffff;
+    }
+
+    .text p {
+  color: #fff;
+  font-size: 1.45rem;
+    }
+
+    .home-text .text-h1 {
+  font-size: 70px;
+  margin-bottom: 4rem;
+  line-height: 4.5rem;
+  color: #fff;
+    }
+
+    .text h4 {
+  font-size: 25px;
+  font-weight: 650;
+  color: #0c5e59;
+  margin-bottom: 1rem;
+    }
+    </style>
+</head> 
+<body onload="buscarNome()">
+
+<!-- NAV BAR inicio-->
+
+<section class="section-1">
+    <header>
+        <a href="index" class="logo"> Animals Safely </a>
+        <nav>
+            <a href="sobre_nos"><b>Sobre nós</b></a>
+            <a href="quero_adotar"><b>Quero adotar</b></a>
+            <a href="ongs"><b>ONGs/Protetores</b></a>
+            <a href="parcerias"><b>Parcerias</b></a>
+            
+        </nav>
+
+        <div>
+            <a href="cadastro_animal" class="btn-divulgar">Divulgar pet</a>
+            
+            
+        </div>
+
+        <div class="account"></div>
+                <div class="profile">
+                    <img src="./src/Assets/img/cute_pet.png" style="width: 50px;">
+                </div>
+
+                <div class="menu">
+                    <h3>Olá, {{ mensagem }}</h3>    
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <a href="perfil">Meu perfil</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="meus_animais">Meus animais</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <a href="logout">Encerrar sessão</a>
+                        </li>
+                    </ul>
+                </div>                
+        </div>
+    </header>
+</section>
+<!-- NAV BAR fim-->
+
+<!-- home page -->
+<main>
+    <section class="home">
+        <div class="home-text">
+            <h1 class="text-h1">Seja bem-vindo, {{ mensagem }}</h1>
+            <a href="quero_adotar" class="home-btn">Vamos adotar?</a>
+        </div>
+        
+        <div class="home-img">
+            <img src="src/assets/img/home.png">
+        </div>
+    </section>
+</main>
+
+ <!-- tentativa de accordion-->
+  
+ <!-- tentativa de accordion fim-->
+
+
+<!-- home page fim -->
+
+<!-- About Us Section -->
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+    <div class="container">
+        <div class="row d-flex no-gutters">
+            <div class="col-md-5 d-flex">
+                <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0" style="background-image:url(src/assets/img/about-1.png);">
+                </div>
+            </div>
+            <div class="col-md-7 pl-md-5 py-md-5">
+                <div class="heading-section pt-md-5">
+                    <h2 class="mb-4">Por que adotar com o Animais Safely?</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 services-2 w-100 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-paw"></span>
+                        </div>
+                        <div class="text pl-3">
+                            <h4>Combate ao abandono</h4>
+                            <p>Adotar ajuda a combater o abandono e dê aos animais uma chance de viver felizes e saudáveis.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 services-2 w-100 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-headphones"></span>
+                        </div>
+                        <div class="text pl-3">
+                            <h4>Suporte humanizado</h4>
+                            <p>Facilitamos a adoção de cães e gatos e mantemos você em contato com instituições e adotantes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 services-2 w-100 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-medkit"></span>
+                        </div>
+                        <div class="text pl-3">
+                            <h4>Doe Amor, Adote um Pet</h4>
+                            <p>Dê uma chance a um animal em busca de um lar.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 services-2 w-100 d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fa fa-user-md"></span>
+                        </div>
+                        <div class="text pl-3">
+                            <h4>Adoção Responsável</h4>
+                            <p>Conectamos você a animais e instituições que garantem um processo de adoção seguro e amoroso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Us Section Fim -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- Faz parte do NAV BAR -->
+<script>
+    $(document).ready(function(){
+        $(window).on('scroll', function(){
+            if ($(window).scrollTop()) {
+                $("header").addClass('bgc');
+            } else {
+                $("header").removeClass('bgc');
+            }
+        });
+    });
+    
+    let profile = document.querySelector(".profile");
+let menu = document.querySelector(".menu");
+
+
+profile.addEventListener("click", ()=>{
+    menu.classList.toggle("active")
+})   
+</script>
+<!-- Faz parte do NAV BAR -->
+
+</body>
+</html>

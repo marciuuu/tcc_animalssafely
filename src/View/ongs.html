@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags Obrigat�rias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    <title>ONGs/Protetores</title>
+
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #0c837c;
+}
+
+.section-1 {
+   
+    width: 100%;
+    height: 14vh;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 500ms;
+    justify-content: space-between;
+    z-index: 1000; /* Ensure it is on top of other content */
+}
+
+nav {
+    margin-right: 70px;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding: 10px 1px;
+    transition: 200ms;
+    
+}
+
+.active {
+    border-color: #0c837c;
+    
+}
+
+nav a:hover {
+    border-color: #ffffff;
+    text-decoration:none;
+    color:#0a6761;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+}
+
+.logo {
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.logo:hover {
+    color: #dcdcdc; /* Opcional: altera a cor do logotipo ao passar o mouse */
+}
+
+.bgc {
+    background: #0c837c;
+    padding: 10px;
+}
+
+.bgc .logo {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.bgc nav a {
+    color: #ffffff;
+}   
+
+@media (max-width: 769px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav {
+        padding: 15px;
+        margin: 0px;
+    }
+}
+
+/* Bot�o Entrar */
+.btn-enter {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0c837c;
+    background-color: #fff; /* Cor verde */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it is on top of other content */
+    
+}
+
+.btn-enter:hover {
+    background-color: #f8fdfd; /* Cor verde escuro ao passar o mouse */
+    text-decoration:none;
+    color:#0a6761;
+}
+
+ /* botao quero doar From Uiverse.io by cssbuttons-io  fim */ 
+
+ .btn-divulgar {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #0c837c; /* Cor de fundo do bot�o */
+    border: 2px solid #ffffff; /* Borda do bot�o */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Espa�o entre os bot�es, se necess�rio */
+}
+
+.btn-divulgar:hover {
+    background-color: #9a8111; /* Cor de fundo ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+    
+}
+
+/* CSS para o acorde�o */
+.accordion .card-header {
+              background-color: var(--accordion-header-bg, #0c837c);
+              border-bottom: 1px solid var(--accordion-header-border, #000000);
+          }
+
+          .accordion .btn-link {
+              color: var(--accordion-btn-text, #ffffff);
+              font-weight: bold;
+          }
+
+          .accordion .btn-link:hover {
+              color: var(--accordion-btn-text-hover, #0b6862);
+              text-decoration: none;
+          }
+
+          .accordion .card-body {
+              background-color: var(--accordion-body-bg, #f1f8f7);
+          }
+
+          /* Estilizando o layout em telas maiores */
+          @media (min-width: 768px) {
+              .row {
+                  gap: 20px;
+              }
+          }
+
+              /* CSS para a se��o de parcerias */
+              .logo {
+              font-size: 35px;
+              color: #fff;
+              text-decoration: none;
+          }
+
+          .logo:hover {
+              color: #dcdcdc;
+          }
+
+          .parcerias-section {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-height: 100vh;
+              background-color: #0c837c;
+          }
+
+          .parcerias-content {
+              background-color: #0c837c;
+              padding: 40px;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              max-width: 800px;
+              text-align: center;
+          }
+
+          .parcerias-content h1 {
+              font-size: 3rem;
+              color: #0c5e59;
+              margin-bottom: 20px;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              text-align: left;
+              font-weight: bold;
+          }
+
+          .parcerias-content h4 {
+                color: #0c5e59;
+             font-weight: bold; /* Deixa o texto em negrito */
+            }
+
+
+          .parcerias-content p {
+              font-size: 1.25rem;
+              color: #ffffff;
+              margin-bottom: 20px;
+          }
+
+          .row {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 20px;
+          }
+
+          .col {
+              flex: 1;
+              min-width: 300px;
+          }
+
+          .card {
+              border: none;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              transition: transform 0.2s;
+              height: 450px;
+              text-align: justify;
+          }
+
+          .card:hover {
+              transform: translateY(-5px);
+          }
+
+          .card-img-top {
+              border-top-left-radius: 8px;
+              border-top-right-radius: 8px;
+              max-height: 200px;
+              object-fit: cover;
+          }
+
+          .card-body {
+              padding: 0;
+          }
+
+          .card-title {
+              font-size: 1.25rem;
+              font-weight: bold;
+              color: #343a40;
+          }
+
+          .card-text {
+              font-size: 0.9rem;
+              color: #6c757d;
+              padding: 10px;
+          }
+
+          @media (max-width: 769px) {
+              header {
+                  flex-direction: column;
+                  padding: 20px;
+              }
+              nav {
+                  padding: 15px;
+                  margin: 0;
+              }
+          }
+
+          /* NAV BAR */
+          header {
+              display: flex;
+              padding: 30px;
+              align-items: center;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              transition: 500ms;
+              justify-content: space-between;
+              z-index: 1000;
+          }
+
+          nav {
+              margin-right: 70px;
+          }
+
+          nav a {
+              display: inline-block;
+              margin-left: 10px;
+              font-size: 15px;
+              text-decoration: none;
+              color: #ffffff;
+              text-transform: uppercase;
+              border-bottom: 3px solid transparent;
+              padding: 10px 1px;
+              transition: 200ms;
+          }
+
+          .active {
+              border-color: #0c837c;
+          }
+
+          nav a:hover {
+              border-color: #ffffff;
+              text-decoration: none;
+              color: #0a6761;
+              -webkit-text-stroke-width: 1px;
+              -webkit-text-stroke-color: #ffffff;
+          }
+
+          .bgc {
+              background: #0c837c;
+              padding: 10px;
+          }
+
+          .bgc .logo {
+              font-size: 30px;
+              color: #ffffff;
+          }
+
+          .bgc nav a {
+              color: #ffffff;
+          }
+
+
+          .home-btn {
+    padding: 15px 45px;
+    background: var(--white);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+    color: #0c837c;
+    }
+
+    nav a:hover {
+    border-color: #0c837c;
+    text-decoration: none;
+    color: #0a6761;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: #0c837c;
+    }
+
+
+    .bgc .logo {
+    font-size: 40px;
+    color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+
+<!-- NAV BAR inicio-->
+<section class="section-1">
+    <header>
+        <a href="index" class="logo"> Animals Safely </a>
+        {{ mensagem }}
+        <nav>
+            <a href="sobre_nos"><b>Sobre nós</b></a>
+            <a href="quero_adotar"><b>Quero adotar</b></a>
+            <a href="ongs"><b>ONGs/Protetores</b></a>
+            <a href="parcerias"><b>Parcerias</b></a>
+            
+        </nav>
+
+        <div>
+            <a href="cadastro_animal" class="btn-divulgar">Divulgar pet</a>
+            <a href="login" class="btn-enter">Entrar</a>
+        </div>
+    </header>
+</section>
+<!-- NAV BAR fim-->
+
+<!-- home page -->
+<section class="parcerias-section">
+    <div class="parcerias-content">
+        <h1>ONGs e Protetores</h1>
+        <h4>Descubra as organizações e iniciativas que dedicam seu trabalho à proteção e ao resgate de animais abandonados.</h4>
+        <br/>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <a href="https://www.aban.org.br" target="_blank">
+                        <img src="https://www.aban.org.br/assets/images/logo.png" class="card-img-top" alt="Imagem 1">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">ABAN - Associação Dos Amigos</h5>
+                        <p class="card-text">A ABAN é uma ONG que resgata e acolhe animais abandonados. Ela promove a adoção responsável e oferece informações sobre como ajudar e adotar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a href="https://catland.org.br" target="_blank">
+                        <img src="https://catland.org.br/wp-content/uploads/2023/03/horizontal-ext-branco-semtag-1.png" class="card-img-top" alt="Imagem 2">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Catland</h5>
+                        <p class="card-text">O CatLand se concentra na adoção de gatos.
+                             O site apresenta felinos resgatados disponíveis para adoção e oferece dicas de cuidados
+                              para os novos tutores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a href="https://viralataviraamigo.org.br/" target="_blank">
+                        <img src="https://viralataviraamigo.org.br/wp-content/uploads/2021/12/topo-logo.svg" class="card-img-top" alt="Imagem 3">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Vira lata vira amigo</h5>
+                        <p class="card-text">Essa ONG trabalha para promover a adoção de cães e gatos, especialmente vira-latas. 
+                            O site mostra animais disponíveis para adoção e informações sobre como se envolver.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a href="https://www.miadoselatidos.org.br/" target="_blank">
+                        <img src="https://static.wixstatic.com/media/b63d80_87ce0dd8db574edaa810ae8ad1ca9876~mv2.png/v1/fill/w_378,h_354,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logo-horizontal-v2_edited_edited.png" class="card-img-top" alt="Imagem 4">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Confraria dos miados e dos latidos</h5>
+                        <p class="card-text">Esse grupo de voluntários resgata e promove a adoção de cães e gatos.
+                             O site apresenta os pets disponíveis e oferece dicas sobre cuidados e adoção responsável.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- home page fim -->
+
+<!-- About Us Section -->
+
+<!-- About Us Section Fim -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- Faz parte do NAV BAR -->
+<script>
+    $(document).ready(function(){
+        $(window).on('scroll', function(){
+            if ($(window).scrollTop()) {
+                $("header").addClass('bgc');
+            } else {
+                $("header").removeClass('bgc');
+            }
+        });
+    });
+</script>
+<!-- Faz parte do NAV BAR -->
+
+</body>
+</html>

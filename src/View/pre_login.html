@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    <style>
+        /* Reset básico para garantir uma aparência consistente */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c837c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilo para o contêiner principal */
+        .container {
+            display: flex;
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            justify-content: center;
+        }
+
+        /* Estilo para cada retângulo de registro */
+        .register-option {
+            flex: 1; /* Faz com que os retângulos ocupem espaço igual */
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            min-width: 300px;
+            max-width: 500px;
+        }
+
+        /* Estilo para os títulos das opções */
+        .register-option h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para os parágrafos das opções */
+        .register-option p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para os botões de registro */
+        .register-button {
+            display: inline-block;
+            font-size: 1em;
+            color: #fff;
+            background-color: #0c837c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .register-button:hover {
+            background-color: #095c57;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="register-option">
+            <h2>Cadastro como Usuário</h2>
+            <p>Crie uma conta como usuário.</p>
+            <a href="cadastro_usuario" class="register-button">Cadastrar como Usuário</a>
+        </div>
+        <div class="register-option">
+            <h2>Cadastro como Instituição</h2>
+            <p>Crie uma conta como uma instituição ou ONG.</p>
+            <a href="cadastro_instituicao" class="register-button">Cadastrar como Instituição</a>
+        </div>
+    </div>
+</body>
+</html>
